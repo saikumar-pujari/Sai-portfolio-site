@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo"><b>Saikumar</b></div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#Journey">Learning Journey</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Saikumar</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#Journey" onclick="toggleMenu()">Learning Journey</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png-modified.png" alt="Saikumar profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Saikumar</h1>
+      <p class="section__text__p2">Backend Developer in Training</p>
+      <div class="btn-container">
+
+        <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download CV
+          </button>
+
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <!-- LinkedIn -->
+       
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='www.linkedin.com/in/saikumarpujarii'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/saikumar-pujari'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img  src="./assets/about-pic-1.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Learning Journey</h3>
+            <p>Practicing DSA in C++(LeetCode&GFG)<br />Backend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.E. Bachelors Degree</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+          <p style="
+                      background-color: #74515147;
+                      border: 2px solid #000;
+                      padding: 15px 25px;
+                      max-width: 700px;
+                      font-size: 1.1rem;
+                      font-weight: 600;
+                      border-radius: 8px;
+                      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+                      margin: 20px auto;
+                      text-align: center;
+              ">
+            Learning Backend Developer | AI Researcher | DSA in C++ | CSE @ Sir MVIT
+          </p>
+
+          Backend-focused Computer Science student (4th sem) at Sir M Visvesvaraya Institute of Technology. Passionate
+          about building robust web systems using Django, Flask, and PostgreSQL. I love writing clean APIs, optimizing
+          performance, and solving real-world problems with code. Currently sharpening my DSA skills in C++, and
+          exploring system design concepts. Always learning, always building — one logical layer at a time.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="Journey">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Journey</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Streamlit</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>TKinterface</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Material UI</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Flask</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Django</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MySQL</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3> SQLite 3</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Git</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <!-- <img src="./assets/checkmark.png" alt="Experience icon" class="icon" /> -->
+              <div>
+                <h3><b>---></b></h3>
+                <p>Still Learning and exploring</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <!-- project-1 -->
+        <div class="details-container color-container"
+          style="max-width: 500px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background: #fafafa;">
+          <h2 class="experience-sub-title project-title" style="font-size: 1.3rem; margin-bottom: 6px; color: #222;">
+            Invoicia — Smart Invoicing SaaS
+          </h2>
+          <p style="color: #0a74da; font-weight: 600; margin: 0 0 10px 0;">Ongoing Project</p>
+          <p class="project-duration" style="font-size: 0.9rem; color: #666; margin-bottom: 12px;">
+            May 2025 - Present
+          </p>
+          <p class="project-description" style="font-size: 1rem; line-height: 1.4; color: #444;">
+            Full-stack SaaS platform built with Django and React.js to simplify invoicing for freelancers. Developed
+            secure REST APIs with JWT auth and role-based access. Integrated asynchronous tasks using Celery + Redis for
+            PDF generation and email alerts.
+            <br><br>
+            Implemented dynamic invoice and client management, search filters, and CRUD operations with smooth UX.
+            Included mock payment flows (Stripe & PayPal), deployed via Docker and CI/CD on Render.
+            <br><br>
+            Focused on modular code, unit testing, and robust backend performance, ensuring scalability and
+            maintainability for real-world SaaS usage.
+          </p>
+        </div>
+
+        <!-- project-2 -->
+        <div class="details-container color-container"
+          style="max-width: 500px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; background: #fafafa; margin-top: 20px;">
+          <h2 class="experience-sub-title project-title" style="font-size: 1.3rem; margin-bottom: 6px; color: #222;">
+            RetailMetrics — SQL Data Warehouse for BI
+          </h2>
+          <p style="color: #0a74da; font-weight: 600; margin: 0 0 10px 0;">Ongoing Project</p>
+          <p class="project-duration" style="font-size: 0.9rem; color: #666; margin-bottom: 12px;">
+            May 2025 - Present
+          </p>
+          <p class="project-description" style="font-size: 1rem; line-height: 1.4; color: #444;">
+            Built an advanced SQL-based data warehouse simulating a retail e-commerce platform. Designed normalized and
+            denormalized schemas, developed views, CTEs, window functions, and materialized views for performance.
+            <br><br>
+            Delivered business intelligence insights like CLV, RFM analysis, and sales forecasting using pure SQL.
+            Optimized complex queries with indexing, partitions, and EXPLAIN plans — powering analytical dashboards with
+            no-code pipelines.
+            <br><br>
+            Developed multi-layered SQL pipelines with raw-to-staging-to-core transformations using CTEs, temp tables,
+            and window functions. Queries powered metrics such as Avg Order Value, Top Customers, Repeat Purchase Rate,
+            and CLV segmentation.
+          </p>
+        </div>
+
+
+
+        <!-- <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div> -->
+
+
+        <!-- <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Project Three</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
+              Live Demo
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:saikumarpujari2005@gmail.com">saikumarpujari2005@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com">/saikumarpujarii</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Journey">Learning Journey</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2023 saikumar pujari. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
